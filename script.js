@@ -8,12 +8,20 @@ document.addEventListener('DOMContentLoaded', () => {
         try{
             const url = await fetch('api.json');
             const dato = await url.json()
-            console.log(dato)
+            pintarDato(dato)
         }
         catch{
             console.log('error')
         }
+        finally{
+            console.log('finally')
+        }
     }
-
-    fetchDato()
 })
+
+fetchDato()
+
+const pintarDato = (dato) => {
+
+    
+}
