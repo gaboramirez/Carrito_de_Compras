@@ -28,8 +28,18 @@ const pintarDato = (dato) => {
         div.className = 'card';
         const Img = document.createElement('Img');
         Img.setAttribute('src', productos.url);
+        const title = document.createElement('h3');
+        title.innerHTML = productos.title;
+        const button = document.createElement('button');
+        button.innerHTML = 'Agregar producto';
+        button.className = 'btn';
+
+
 
         div.appendChild(Img)
-        console.log(div)
+        div.appendChild(title)
+        div.appendChild(button)
+        
+        contenedorProductos.appendChild(div)
     });
 }
