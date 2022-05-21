@@ -67,8 +67,21 @@ const agregarProductos = (productoCard) => {
     div.className = 'producto';
     const img = document.createElement('img');
     img.setAttribute('src', productoCard.img);
+    const title = document.createElement('h3');
+    title.innerHTML = productoCard.title;
+    const iconSumar = document.createElement('i');
+    iconSumar.className = 'fa-solid fa-solid-plus';
+    const iconRestar = document.createElement('i');
+    iconRestar.className = 'fa-solid fa-solid-minus';
+    const span = document.createElement('span');
+    span.innerHTML = productoCard.stock;
+
 
     div.appendChild(img)
+    div.appendChild(title)
+    div.appendChild(iconSumar)
+    div.appendChild(span)
+    div.appendChild(iconRestar)
 
     aside.appendChild(div)
 }
