@@ -3,42 +3,42 @@
         "precio": 3000,
         "id": 1,
         "title": "Bolsa de Arena",
-        "url": "carrito_img/arena",
+        "url": "arena.png",
         "stock": 1
     },
     {
         "precio": 2500,
         "id": 2,
         "title": "Ladrillos",
-        "url": "carrito_img/ladrillos",
+        "url": "ladrillos.jpg",
         "stock": 1
     },
     {
         "precio": 4000,
         "id": 3,
         "title": "Tablones de Madera",
-        "url": "carrito_img/madera",
+        "url": "madera.jpg",
         "stock": 1
     },
     {
         "precio": 5000,
         "id": 4,
         "title": "Bolsa de Cemento",
-        "url": "carrito_img/cemento",
+        "url": "cemento,jpg",
         "stock": 1
     },
     {
         "precio": 8500,
         "id": 5,
         "title": "Bolsa de Hormigon",
-        "url": "carrito_img/hormigon",
+        "url": "hormigon.jpg",
         "stock": 1
     },
     {
         "precio": 10000,
         "id": 6,
         "title": "Marmol",
-        "url": "carrito_img/marmol",
+        "url": "marmol.jpg",
         "stock": 1
     }
 ]
