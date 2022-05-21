@@ -23,5 +23,13 @@ fetchDato()
 
 const pintarDato = (dato) => {
 
-    
+    Object.values(dato).forEach(productos => {
+        const div = document.createElement('div');
+        div.className = 'card';
+        const Img = document.createElement('Img');
+        Img.setAttribute('src', productos.url);
+
+        div.appendChild(Img)
+        console.log(div)
+    });
 }
