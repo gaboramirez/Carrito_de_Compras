@@ -17,9 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log('finally')
         }
     }
+    fetchDato()
 })
-
-fetchDato()
 
 const pintarDato = (dato) => {
 
@@ -39,7 +38,7 @@ const pintarDato = (dato) => {
         div.appendChild(Img)
         div.appendChild(title)
         div.appendChild(button)
-        
+
         contenedorProductos.appendChild(div)
     });
 }
