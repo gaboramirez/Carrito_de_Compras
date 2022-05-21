@@ -49,7 +49,7 @@ aside.active{
 
 
 
-.container-products{
+.contenedor-productos{
     padding: 5rem 10%;
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
@@ -89,7 +89,7 @@ aside.active{
     border: none;
 } 
 
-.product{
+.producto{
     display: flex;
     justify-content: space-around;
     align-items: center;
