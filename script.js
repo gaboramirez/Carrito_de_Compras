@@ -1,6 +1,8 @@
 const contenedorProductos = document.querySelector('.contenedor-productos');
 const aside = document.querySelector('aside');
 const icon = document.querySelector('.icon');
+const span = document.querySelector('span');
+
 let asideProductos = [];
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -60,6 +62,29 @@ document.addEventListener('click', (e) =>{
     if(e.target.matches('.icon') || e.target.matches('.icon *')){
         aside.classList.toggle('active')
     }
+
+    if(e.target.matches('.fa-circle-plus')){
+    
+        const obj = {
+            span: e.target.parentElement.querySelector('span')
+        }
+
+        obj.span.innerHTML++;     
+        
+    } 
+
+    if(e.target.matches('.fa-circle-minus')){
+        const obj = {
+            span: e.target.parentElement.querySelector('span')
+        }
+
+        obj.span.innerHTML--; 
+        
+        if(obj.span.innerHTML <= 0){
+            e.target.parentElement.remove()
+        }
+
+        }
 })
 
 const agregarProductos = (productoCard) => {
@@ -70,11 +95,11 @@ const agregarProductos = (productoCard) => {
     const title = document.createElement('h3');
     title.innerHTML = productoCard.title;
     const iconSumar = document.createElement('i');
-    iconSumar.className = 'fa-solid fa-solid-plus';
+    iconSumar.className = 'fa-solid fa-circle-plus';
     const iconRestar = document.createElement('i');
-    iconRestar.className = 'fa-solid fa-solid-minus';
+    iconRestar.className = 'fa-solid fa-circle-minus';
     const span = document.createElement('span');
-    span.innerHTML = productoCard.stock;
+    span.textContent = productoCard.stock;
 
 
     div.appendChild(img)
