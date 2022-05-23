@@ -49,6 +49,24 @@ document.addEventListener('click', (e) =>{
     if(e.target.matches('.btn')){
         card = e.target.parentElement
 
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.addEventListener('mouseenter', Swal.stopTimer)
+              toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+          })
+          
+          Toast.fire({
+            icon: 'success',
+            title: 'Signed in successfully'
+          })
+
+          
         const productoCard = {
             img: card.querySelector('img').src,
             title: card.querySelector('h3').textContent,
