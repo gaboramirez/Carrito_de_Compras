@@ -98,6 +98,8 @@ const agregarProductos = (productoCard) => {
     img.setAttribute('src', productoCard.img);
     const title = document.createElement('h3');
     title.innerHTML = productoCard.title;
+    const precio = document.createElement('h4');
+    precio.innerHTML = productoCard.precio;
     const iconSumar = document.createElement('i');
     iconSumar.className = 'fa-solid fa-circle-plus';
     const iconRestar = document.createElement('i');
@@ -108,6 +110,7 @@ const agregarProductos = (productoCard) => {
 
     div.appendChild(img)
     div.appendChild(title)
+    div.appendChild(precio)
     div.appendChild(iconSumar)
     div.appendChild(span)
     div.appendChild(iconRestar)
