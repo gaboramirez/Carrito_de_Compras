@@ -72,7 +72,7 @@ document.addEventListener('click', (e) =>{
           
           Toast.fire({
             icon: 'success',
-            title: 'Signed in successfully'
+            title: 'Agregado al Carrito'
           })
 
 
@@ -118,8 +118,6 @@ const agregarProductos = (productoCard) => {
     img.setAttribute('src', productoCard.img);
     const title = document.createElement('h3');
     title.innerHTML = productoCard.title;
-    const precio = document.createElement('h4');
-    precio.innerHTML = productoCard.precio;
     const iconSumar = document.createElement('i');
     iconSumar.className = 'fa-solid fa-circle-plus';
     const iconRestar = document.createElement('i');
