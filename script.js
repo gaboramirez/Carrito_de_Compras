@@ -28,7 +28,7 @@ const pintarDato = (dato) => {
         img.setAttribute('src', productos.url);
         const title = document.createElement('h3');
         title.innerHTML = productos.title;
-        const precio = document.createElement('h2');
+        const precio = document.createElement('h4');
         precio.innerHTML = productos.precio;
         const button = document.createElement('button');
         button.innerHTML = 'Agregar producto';
@@ -53,7 +53,7 @@ document.addEventListener('click', (e) =>{
             img: card.querySelector('img').src,
             title: card.querySelector('h3').textContent,
             stock: 1,
-            precio: card.querySelector('h2').textContent
+            precio: card.querySelector('h4').textContent
         }
 
         asideProductos.push(productoCard)
