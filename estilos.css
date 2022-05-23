@@ -79,6 +79,12 @@ aside.active{
 
 }
 
+.card h4{
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+
 .card .btn{
     background-color: rgb(221, 55, 55);
     color: #FFF;
