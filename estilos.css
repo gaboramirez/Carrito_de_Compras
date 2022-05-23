@@ -16,10 +16,6 @@ header{
     background-color: #FFF;
 }
 
-.fondo{
-    background-color: rgb(159, 219, 214);
-}
-
 nav{
     display: flex;
     justify-content: space-between;
