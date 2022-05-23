@@ -5,6 +5,8 @@ const span = document.querySelector('span');
 
 let asideProductos = [];
 
+localStorage.clear();
+
 document.addEventListener('DOMContentLoaded', () => {
     const fetchDato = async () => {
         try{
@@ -48,6 +50,13 @@ const pintarDato = (dato) => {
 document.addEventListener('click', (e) =>{
     if(e.target.matches('.btn')){
         card = e.target.parentElement
+          
+        const productoCard = {
+            img: card.querySelector('img').src,
+            title: card.querySelector('h3').textContent,
+            stock: 1,
+            precio: card.querySelector('h4').textContent
+        }
 
         const Toast = Swal.mixin({
             toast: true,
@@ -66,13 +75,6 @@ document.addEventListener('click', (e) =>{
             title: 'Signed in successfully'
           })
 
-          
-        const productoCard = {
-            img: card.querySelector('img').src,
-            title: card.querySelector('h3').textContent,
-            stock: 1,
-            precio: card.querySelector('h4').textContent
-        }
 
         asideProductos.push(productoCard)
 
